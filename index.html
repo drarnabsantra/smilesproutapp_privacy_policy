@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - SmileSprout</title>
     <meta name="description" content="Official Privacy Policy and Data Safety disclosures for SmileSprout: Pediatric Dental & Maternal Oral Care App in compliance with Google Play Developer Program policies.">
+
     <style>
         :root {
             --primary: #00838f;
@@ -46,9 +47,10 @@
             border: 1px solid rgba(0, 131, 143, 0.15);
         }
 
+        /* High-contrast header */
         header {
-            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
-            color: #ffffff;
+            background: linear-gradient(135deg, #004D57 0%, #006D77 55%, #007F86 100%);
+            color: #FFFFFF;
             padding: 44px 32px 36px;
             text-align: left;
         }
@@ -57,17 +59,20 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            color: #FFFFFF;
             padding: 6px 14px;
             border-radius: 30px;
             font-size: 13px;
-            font-weight: 700;
+            font-weight: 800;
             letter-spacing: 0.5px;
             margin-bottom: 16px;
             text-transform: uppercase;
         }
 
         header h1 {
+            color: #FFFFFF;
             font-size: 32px;
             font-weight: 800;
             margin-bottom: 10px;
@@ -75,23 +80,31 @@
         }
 
         header p {
+            color: #FFFFFF;
             font-size: 16px;
-            opacity: 0.92;
+            opacity: 1;
             max-width: 680px;
         }
 
+        /* Metadata with improved contrast */
         .metadata-bar {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 24px;
             padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.55);
             font-size: 14px;
+            color: #FFFFFF;
+        }
+
+        .metadata-bar span {
+            color: #FFFFFF;
         }
 
         .metadata-bar span strong {
-            color: #b2ebf2;
+            color: #B2F5FF;
+            font-weight: 800;
         }
 
         .content {
@@ -143,9 +156,11 @@
             nav.table-of-contents ol {
                 column-count: 1;
             }
+
             header {
                 padding: 32px 20px 28px;
             }
+
             .content {
                 padding: 24px 20px 36px;
             }
@@ -217,7 +232,8 @@
             border: 1px solid var(--border-color);
         }
 
-        .data-table th, .data-table td {
+        .data-table th,
+        .data-table td {
             padding: 12px 14px;
             text-align: left;
             border-bottom: 1px solid #eceff1;
@@ -308,14 +324,19 @@
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
+
     <header>
         <div class="brand-badge">🦷 Pediatric Dental &amp; Maternal Oral Health</div>
+
         <h1>Privacy Policy for SmileSprout</h1>
+
         <p>Your privacy and the safety of your family's health information are our highest priorities. This policy explains our data practices, Google Play Data Safety alignment, and compliance with Google Play Developer Program policies.</p>
-        
+
+        <!-- Package name intentionally removed from the top metadata bar -->
         <div class="metadata-bar">
             <span><strong>App Name:</strong> SmileSprout</span>
             <span><strong>Developer:</strong> smilesprout</span>
@@ -325,6 +346,7 @@
     </header>
 
     <div class="content">
+
         <div class="summary-card">
             <h3>🛡️ Quick Privacy &amp; Data Safety Summary</h3>
             <p>SmileSprout is designed for parents and expectant mothers to track family oral hygiene, 2-minute brushing routines, and child teething milestones. <strong>We do not sell user data.</strong> We do not track users across other apps or websites. All health data is encrypted in transit and at rest. Parents retain complete ownership of all child and maternal profiles and can delete their account and all stored records at any time directly in the app or via email.</p>
@@ -408,6 +430,7 @@
                 <li><strong>No Direct Data Solicitation from Children:</strong> The app never solicits personal information directly from children under 13. All child profile information (name and age) is input and managed solely by the verified parent or guardian.</li>
                 <li><strong>Family-Safe Advertising:</strong> Any advertisements served within the app conform strictly to Google Play's Families Self-Certified Ads SDK requirements. The Google Mobile Ads SDK is initialized with child-directed treatment flags (<code>tagForChildDirectedTreatment</code>), ensuring that behavioral tracking and personalized ads are disabled.</li>
             </ul>
+
             <div class="callout-box">
                 <strong>Parental Rights:</strong> Parents and guardians have the right to inspect, update, or completely delete any child profile and brushing log associated with their account at any time through the in-app settings or by contacting <a href="mailto:smilesproutoralcare@gmail.com">smilesproutoralcare@gmail.com</a>.
             </div>
@@ -417,7 +440,7 @@
         <section id="data-safety-table">
             <h2>5. Google Play Data Safety Matrix</h2>
             <p>The following table outlines our data collection, processing, and sharing declarations corresponding to the Google Play Console Data Safety questionnaire:</p>
-            
+
             <table class="data-table">
                 <thead>
                     <tr>
@@ -499,7 +522,7 @@
         <section id="retention-deletion">
             <h2>8. Data Retention &amp; Account Deletion</h2>
             <p>In compliance with Google Play's <strong>User Data and Account Deletion Policy</strong>, SmileSprout provides clear pathways for users to permanently delete their account and associated data:</p>
-            
+
             <h3>Pathway A: In-App Account &amp; Data Deletion</h3>
             <p>Users can permanently delete their account and all associated dental charts directly within the mobile application:</p>
             <ol>
@@ -538,7 +561,8 @@
         <!-- 11. Contact Information -->
         <section id="contact">
             <h2>11. Contact Us &amp; Developer Information</h2>
-            <p>If you have questions, concerns, or requests regarding this Privacy Policy or your family's data privacy, please contact the lead developer:</p>
+            <p>If you have questions, concerns, or requests regarding this Privacy Policy and your family's data privacy, please contact the lead developer:</p>
+
             <div class="contact-card">
                 <p><strong>App:</strong> SmileSprout (Family Pediatric &amp; Maternal Dental Companion)</p>
                 <p><strong>Lead Developer:</strong> smilesprout</p>
@@ -548,12 +572,14 @@
                 <p><strong>Country of Origin:</strong> India</p>
             </div>
         </section>
+
     </div>
 
     <footer>
         <p>&copy; 2026 SmileSprout. All rights reserved. Developed by smilesprout.</p>
         <p style="margin-top: 8px; font-size: 13px;">In compliance with Google Play Developer Program Policies, Google Play Families Policy, COPPA, and GDPR.</p>
     </footer>
+
 </div>
 
 </body>
