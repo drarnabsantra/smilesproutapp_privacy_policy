@@ -321,8 +321,8 @@
         <div class="metadata-bar">
             <span><strong>App Name:</strong> SmileSprout</span>
             <span><strong>Developer:</strong> smilesprout</span>
-            <span><strong>Effective Date:</strong> October 31, 2026</span>
-            <span><strong>Version:</strong> 1.1</span>
+            <span><strong>Effective Date:</strong> November 7, 2026</span>
+            <span><strong>Version:</strong> 1.2</span>
         </div>
     </header>
 
@@ -342,10 +342,11 @@
                 <li><a href="#data-safety-table">5. Data Summary</a></li>
                 <li><a href="#third-party">6. Third-Party Services &amp; SDKs</a></li>
                 <li><a href="#permissions">7. Android Device Permissions</a></li>
-                <li><a href="#retention-deletion">8. Data Retention &amp; Account Deletion</a></li>
-                <li><a href="#security">9. Security Measures</a></li>
-                <li><a href="#updates">10. Policy Updates</a></li>
-                <li><a href="#contact">11. Contact Information</a></li>
+                <li><a href="#retention">8. Data Retention</a></li>
+                <li><a href="#account-deletion">9. Account Deletion</a></li>
+                <li><a href="#security">10. Security Measures</a></li>
+                <li><a href="#updates">11. Policy Updates</a></li>
+                <li><a href="#contact">12. Contact Information</a></li>
             </ol>
         </nav>
 
@@ -382,6 +383,7 @@
             </ul>
             <h3>C. Stored on Your Device</h3>
             <p>Your logs and settings are kept in the app's private storage on your phone. If you sync, a copy is also stored in your account in the cloud.</p>
+            <p><strong>Notification history:</strong> the tips and article alerts you receive are saved in the Notification Centre (bell icon) on your device only, together with whether you have read them. They are kept for <strong>7 days</strong> and then deleted automatically. They are not copied to our servers, they are removed when you delete your account, and a new installation of the app starts with an empty Notification Centre.</p>
         </section>
 
         <!-- 3. How We Use Information -->
@@ -389,8 +391,8 @@
             <h2>3. How We Use Information</h2>
             <ul>
                 <li><strong>Reminders and tracking:</strong> to schedule brushing alarms, show timers, streaks and history.</li>
-                <li><strong>Cloud sync:</strong> to back up and restore your records across your devices using Google Cloud Firestore.</li>
-                <li><strong>Notifications:</strong> to send reminders and dental tips you have enabled.</li>
+                <li><strong>Cloud sync:</strong> to back up and restore your records across your devices using Google Cloud Firestore. You can sync manually from Profile. If you are signed in and the <strong>Auto sync</strong> switch is on, the app also syncs automatically after you make changes and once a day around midnight (your device's local time). Turn Auto sync off at any time to stop automatic syncing.</li>
+                <li><strong>Notifications:</strong> to send reminders, dental tips and article alerts you have enabled. You can turn dental tips off in the app.</li>
                 <li><strong>Account security:</strong> to sign you in and keep your data private to your account.</li>
             </ul>
             <p><strong>Our commitments:</strong></p>
@@ -424,6 +426,7 @@
                     <tr><td><strong>Child name and age, parent name</strong></td><td>Personalised timers and milestones</td><td>Not sold. Stored with Google Firebase if you sync</td><td>Deleted with your account</td></tr>
                     <tr><td><strong>Health and wellness entries</strong> (pregnancy logs, symptoms, diet, appointments, brushing history)</td><td>App features and sync</td><td>Not sold. Stored with Google Firebase if you sync</td><td>Deleted with your account</td></tr>
                     <tr><td><strong>Profile photo</strong> (optional)</td><td>Show your avatar</td><td>Stored in Firebase Storage</td><td>Deleted with your account</td></tr>
+                    <tr><td><strong>Notification history</strong> (messages shown in the bell icon)</td><td>Show past tips and alerts</td><td>Stored on your device only, not shared</td><td>Auto-deleted after 7 days; removed on account deletion or uninstall</td></tr>
                     <tr><td><strong>Notification token and app installation identifiers</strong></td><td>Deliver reminders and tips; keep the app working</td><td>Processed by Google Firebase</td><td>Token removed on logout and account deletion</td></tr>
                 </tbody>
             </table>
@@ -460,24 +463,44 @@
         </section>
 
         <!-- 8. Data Retention & Account Deletion -->
-        <section id="retention-deletion">
-            <h2>8. Data Retention &amp; Account Deletion</h2>
-            <p>We keep your data only while your account exists. You can delete it at any time:</p>
-            <h3>Pathway A: In the App</h3>
+        <section id="retention">
+            <h2>8. Data Retention</h2>
+            <ul>
+                <li><strong>Account and synced data:</strong> kept in the cloud only while your account exists, and removed when you delete your account (see Section 9).</li>
+                <li><strong>Data on your device:</strong> kept until you delete your account, uninstall the app or clear its storage. Automatic phone backups of the app's data are turned off.</li>
+                <li><strong>Notification history:</strong> kept on your device for 7 days, then deleted automatically.</li>
+                <li><strong>Tip delivery log:</strong> we keep a general log of which tips were sent, so we do not repeat them. It is not linked to any user.</li>
+                <li><strong>Backups:</strong> Google may keep residual backup copies of deleted cloud data for a limited period under its own policies.</li>
+            </ul>
+        </section>
+
+        <section id="account-deletion">
+            <h2>9. Account Deletion</h2>
+            <p>You can delete your account and your data at any time, in any of three ways. A public page with the same instructions is available here:
+            <a href="https://drarnabsantra.github.io/smilesproutapp_privacy_policy/account-deletion.html">https://drarnabsantra.github.io/smilesproutapp_privacy_policy/account-deletion.html</a></p>
+            <h3>Option A: In the App</h3>
             <ol>
                 <li>Open SmileSprout and go to the <strong>Profile</strong> tab.</li>
                 <li>Scroll to the bottom and tap the red <strong>Delete</strong> account button.</li>
-                <li>Confirm. If you signed in a while ago, the app may ask you to sign in again first, then repeat the steps.</li>
+                <li>Confirm. If you signed in a while ago, the app may ask you to sign in again first; do that and repeat the steps.</li>
             </ol>
-            <p>Deleting removes your cloud records (profiles, logs, appointments, notification token and profile photo), your sign-in account, and the data stored on that device. Google may keep residual backup copies for a limited period under its own policies.</p>
-            <h3>Pathway B: By Email</h3>
-            <p>If you no longer have the app, email <a href="mailto:smilesproutoralcare@gmail.com">smilesproutoralcare@gmail.com</a> from your registered address with the subject <strong>Data Deletion Request - SmileSprout</strong>. We will verify the request and delete your data within 7 business days, then confirm by email.</p>
-            <p>Data kept only on your phone (guest mode) is removed when you uninstall the app or clear its storage.</p>
+            <h3>Option B: Online Request Page</h3>
+            <p>If you no longer have the app, open the <a href="https://drarnabsantra.github.io/smilesproutapp_privacy_policy/account-deletion.html">account deletion page</a> and follow the steps to send your request.</p>
+            <h3>Option C: By Email</h3>
+            <p>Email <a href="mailto:smilesproutoralcare@gmail.com">smilesproutoralcare@gmail.com</a> from your registered address with the subject <strong>Data Deletion Request - SmileSprout</strong>. We will verify the request and delete your data within 7 business days, then confirm by email.</p>
+            <h3>What is deleted</h3>
+            <ul>
+                <li>Your sign-in account and profile (name, email).</li>
+                <li>Child profiles, brushing history and streaks, pregnancy logs, symptoms, diet entries, appointments and risk assessments stored in the cloud.</li>
+                <li>Your optional profile photo and your notification token.</li>
+                <li>Data stored in the app on that device, including your Notification Centre history.</li>
+            </ul>
+            <p><strong>What may remain:</strong> residual backup copies held by Google for a limited period (see Section 8). Data kept only on a phone in guest mode is removed when you uninstall the app or clear its storage.</p>
         </section>
 
         <!-- 9. Security Measures -->
         <section id="security">
-            <h2>9. Security</h2>
+            <h2>10. Security</h2>
             <ul>
                 <li><strong>Encryption in transit:</strong> data sent between the app and Google servers uses TLS.</li>
                 <li><strong>Access rules:</strong> Firestore and Storage security rules limit each account's data to its own signed-in user.</li>
@@ -488,13 +511,13 @@
 
         <!-- 10. Policy Updates -->
         <section id="updates">
-            <h2>10. Changes to This Privacy Policy</h2>
+            <h2>11. Changes to This Privacy Policy</h2>
             <p>We may periodically update this Privacy Policy to reflect app enhancements or changes in legal regulations. When changes are made, the revised policy will be posted on this webpage with an updated "Effective Date". We encourage you to review this page periodically.</p>
         </section>
 
         <!-- 11. Contact Information -->
         <section id="contact">
-            <h2>11. Contact Us &amp; Developer Information</h2>
+            <h2>12. Contact Us &amp; Developer Information</h2>
             <p>If you have questions, concerns, or requests regarding this Privacy Policy or your family's data privacy, please contact the lead developer:</p>
             <div class="contact-card">
                 <p><strong>App:</strong> SmileSprout (Family Pediatric &amp; Maternal Dental Companion)</p>
